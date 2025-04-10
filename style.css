@@ -1,0 +1,308 @@
+/* helper sites
+    https://codepen.io/Umer_Farooq/pen/eYJgKGN
+    https://symbolsdb.com/text-symbols
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Lucida Handwriting;
+    box-sizing: border-box;
+    /* https://www.tutorialbrain.com/Css_tutorial/Css_font_family_list/ */
+}
+
+#headDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 31, 65);
+    color: white;
+    height: 5rem;
+    word-spacing: 2rem;
+}
+
+#themePannel{
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    gap: 1rem;
+}
+
+
+/* {  theme button start ------------------------------------------------------------- */
+    body {
+        transition: background 0.2s linear;
+      }
+      
+      body.dark {background-color: #535661; color: white} /* #9b59b6 */
+      
+      body.dark h1, body.dark a {color: #fff;}
+      
+      .checkbox {
+        opacity: 0;
+        position: absolute;
+      }
+      
+      .checkbox-label {
+        background-color: #111;
+        width: 50px;
+        height: 26px;
+        border-radius: 50px;
+        position: relative;
+        padding: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .checkbox-label .ball {
+        background-color: #fff;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+      }
+      
+      .checkbox:checked + .checkbox-label .ball {
+        transform: translateX(24px);
+      }
+
+      .scoreLight{
+        color: white;
+      }
+
+      .inThemeText{
+        text-decoration: none;
+        font-family: none;
+      }
+
+/* } theme button over ----------------------------------------------------------------*/
+
+#choiceContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin: 5rem;
+}
+
+.choiceBlocks{
+    font-size: 50px;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.choiceBlocks:hover{
+    border: 5px solid black;
+    /* box-shadow:0px 0px 0px 10px rgb(41, 17, 17) inset; */
+}
+
+#rock{
+    background-color: pink;
+}
+#paper{
+    background-color: rgb(105, 188, 221);
+}
+#scissors{
+    background-color: rgb(126, 137, 62);
+}
+
+#scoreHead{
+    visibility: hidden;
+}
+
+#scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#yourScore , #compScore {
+    font-size: 3rem;
+}
+
+#status{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: dimgrey;
+    display: inline-block;
+    padding: 10px;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+#chooseHead{
+    visibility: hidden;    
+}
+
+
+
+
+
+/* responsive ----------------------------------- */
+
+@media (min-width: 0px) and (max-width: 400px) {
+    *{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: Serif;
+        box-sizing: border-box;
+        /* https://www.tutorialbrain.com/Css_tutorial/Css_font_family_list/ */
+    }
+    
+    #head{
+        font-size: 20px;
+    }
+
+    #headDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(13, 31, 65);
+        color: white;
+        height: 5rem;
+    }
+    
+    #themePannel > p{
+        font-size: larger;
+    }
+
+    #themePannel{
+        color: #111;
+        /* font-size: 15px; */
+        display: flex;
+        position: absolute;
+        top: 5.5rem;
+        right: 8rem;
+        gap: 1rem;
+    }
+    
+    
+    /* {  theme button start ------------------------------------------------------------- */
+        body {
+            transition: background 0.2s linear;
+          }
+          
+          body.dark {background-color: #535661;} /* #9b59b6 */
+          
+          body.dark h1, body.dark a {color: #fff;}
+          
+          .checkbox {
+            opacity: 0;
+            position: absolute;
+          }
+          
+          .checkbox-label {
+            background-color: #111;
+            width: 50px;
+            height: 26px;
+            border-radius: 50px;
+            position: relative;
+            padding: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          .checkbox-label .ball {
+            background-color: #fff;
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            border-radius: 50%;
+            transition: transform 0.2s linear;
+          }
+          
+          .checkbox:checked + .checkbox-label .ball {
+            transform: translateX(24px);
+          }
+    
+          .scoreLight{
+            color: white;
+          }
+    
+          .inThemeText{
+            text-decoration: none;
+            font-family: none;
+          }
+    
+    /* } theme button over ----------------------------------------------------------------*/
+    
+
+    #chooseHead{
+        visibility: visible;
+        position: absolute;
+        top: 8rem;
+        right: 8.2rem;
+    }
+
+    #choiceContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem;
+        margin-top: 6rem;
+    }
+    
+    .choiceBlocks{
+        font-size: 30px;
+        padding: 1rem;
+        border-radius: 50%;
+    }
+    .choiceBlocks:hover{
+        border: 5px solid black;
+        /* box-shadow:0px 0px 0px 10px rgb(41, 17, 17) inset; */
+    }
+    
+    #rock{
+        background-color: pink;
+    }
+    #paper{
+        background-color: rgb(105, 188, 221);
+    }
+    #scissors{
+        background-color: rgb(126, 137, 62);
+    }
+
+    
+    #scoreHead{
+        visibility: visible;
+    }
+    
+    #scoreboard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    #yourScore , #compScore {
+        font-size: 2rem;
+    }
+    
+    #status{
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        background-color: dimgrey;
+        display: inline-block;
+        padding: 10px;
+        margin: 1rem;
+        border-radius: 10px;
+    }
+}

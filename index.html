@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- 🪨📃✂️ -->
+     <div id="headDiv">
+        <h1 id="head">Rock Paper Scissors</h1>
+        <div id="themePannel">
+            <p id="themeHead">Theme</p>
+
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="inThemeText">🌜</i>
+                <i class="inThemeText">🔆</i>
+                <span class="ball"></span>
+            </label>
+
+        </div>
+     </div>
+     
+
+    <h3 id="chooseHead">Your Choice :- </h3>
+
+    <div id="choiceContainer">
+        <div class="choiceBlocks" id="rock">
+            <p>🪨</p>
+        </div>
+        <div class="choiceBlocks" id="paper">
+            <p>📃</p>
+        </div>
+        <div class="choiceBlocks" id="scissors">
+            <p>✂️</p>
+        </div>
+    </div>
+
+    <h3 id="scoreHead">Score :-</h3>
+
+    <div id="scoreboard">
+        <div id="score">
+            <p id="yourScore">0</p>
+            <p>You</p>
+        </div>
+        <div id="score">
+            <p id="compScore">0</p>
+            <p>Comp</p>
+        </div>
+    </div>
+
+    <div id="status">
+        <p>Play your move</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
